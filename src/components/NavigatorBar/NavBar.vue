@@ -1,10 +1,12 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import NavBarLiItem from "./NavBarLiItem.vue";
+import NavBarLiItem2 from "./NavBarLiItem2.vue";
 export default defineComponent({
     name: "NavBar",
     components: {
-        NavBarLiItem
+        NavBarLiItem,
+        NavBarLiItem2
     },
     data() {
         return {
@@ -51,11 +53,16 @@ export default defineComponent({
                     <div :style="{ visibility: isTab1 ? 'visible' : 'hidden' }"
                         class="fixed p-6 rounded-xl shadow-[0px_2px_30px_5px_rgba(0,0,0,0.1)] transform translate-y-2 -translate-x-8 bg-white">
                         <ul class=" flex flex-col items-start gap-5">
-                            <NavBarLiItem title="Explore Design Work" desc="Trending designs to inspire you" />
-                            <NavBarLiItem title="New & Noteworthy" desc="Up-and-coming designers" />
-                            <NavBarLiItem title="Playoff" desc="Work designers are riffing on" />
-                            <NavBarLiItem title="Blog" desc="Interviews, tutorials, and more" />
-                            <NavBarLiItem title="Weekly Warm-up" desc="Prompt to flex your design skills" />
+                            <NavBarLiItem2 imgurl="@/assets/search-icon.svg" title="Explore Design Work"
+                                desc="Trending designs to inspire you" />
+                            <NavBarLiItem2 imgurl="@/assets/search-icon.svg" title="New & Noteworthy"
+                                desc="Up-and-coming designers" />
+                            <NavBarLiItem2 imgurl="@/assets/search-icon.svg" title="Playoff"
+                                desc="Work designers are riffing on" />
+                            <NavBarLiItem2 imgurl="@/assets/search-icon.svg" title="Blog"
+                                desc="Interviews, tutorials, and more" />
+                            <NavBarLiItem2 imgurl="@/assets/search-icon.svg" title="Weekly Warm-up"
+                                desc="Prompt to flex your design skills" />
                         </ul>
                     </div>
                 </li>
